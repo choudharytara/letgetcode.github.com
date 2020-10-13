@@ -1,0 +1,119 @@
+<html>
+<head>
+<style>
+ h1{text-align:center;color:red;font-size:70px}
+body{background:black;}
+.fs{font-size:25px;color:white}
+#fst{font-size:20px;color:green}
+.first{border:2px blue;border-style:dashed;background-color:white;
+color:black;width=20%;text-size:30px}
+.bt{background-color:red;float:right;border-width:7px;font-size:20}
+.bn{background-color:red;float:left ;border-width:7px;font-size:20}
+</style>
+</head>
+<body>
+<h1> Strings</h1>
+<p class="fs">String Literals</p>
+
+<p id="fst">String literals in python are surrounded by either single quotation marks,
+ or double quotation marks.<br>
+
+'hello' is the same as "hello".<br>
+You can display a string literal with the print() function :<br>
+Example</p>
+<p class="first">print("Hello")<br>
+print('Hello')</p>
+
+<p class="fs">Assign String to a Variable</p>
+<p id="fst">Assigning a string to a variable is done with the variable name 
+followed by an equal sign and the string :<br>
+Example</p>
+<p class="first">a = "Hello"<br>
+print(a)</p>
+<p class="fs">Multiline Strings</p>
+<p id="fst">You can assign a multiline string to a variable by using three quotes:<br>
+Example<br>
+
+You can use three double quotes:</p>
+<p class="first">a = """Lorem ipsum dolor sit amet,<br>
+consectetur adipiscing elit,<br>
+sed do eiusmod tempor incididunt<br>
+ut labore et dolore magna aliqua."""<br>
+print(a)</p>
+<p id="fst">Or three single quotes:<br>
+Example</p>
+<p class="first">a = '''Lorem ipsum dolor sit amet,<br>
+consectetur adipiscing elit,<br>
+sed do eiusmod tempor incididunt<br>
+ut labore et dolore magna aliqua.'''<br>
+print(a)</p>
+
+<p class="fs">Strings are Arrays</p>
+
+<p id="fst">Like many other popular programming languages,
+ strings in Python are arrays of bytes representing unicode characters.<br>
+
+However, Python does not have a character data type,
+ a single character is simply a string with a length of 1.<br>
+
+Square brackets can be used to access elements of the string.<br>
+Example<br>
+Get the character at position 1
+ (remember that the first character has the position 0):</p>
+<p class="first">a = "Hello, World!"<br>
+print(a[1])</p>
+<p class="fs">String Length</p>
+
+<p id="fst">To get the length of a string, use the len() function.<br>
+Example<br>
+
+The len() function returns the length of a string:</p>
+<p class="first">a = "Hello, World!"<br>
+print(len(a))</p>
+<p class="fs">String Methods</p>
+
+<p id="fst">Python has a set of built-in methods that you can use on strings.<br>
+Example<br>
+The strip() method removes any whitespace from the beginning or the end:</p>
+<p class="first">a = " Hello, World! "<br>
+print(a.strip()) # returns "Hello, World!"</p>
+
+<p id="fst">The replace() method replaces a string with another string:</p>
+<p class="first">a = "Hello, World!"<br>
+print(a.replace("H", "J"))</p>
+
+<p class="fs">Check String</p>
+
+<p id="fst'>To check if a certain phrase or character is present in a string, we can use the keywords in or not in.<br>
+Example<br>
+
+Check if the phrase "ain" is present in the following text:</p>
+<p class="first">txt = "The rain in Spain stays mainly in the plain"<br>
+x = "ain" in txt<br>
+print(x)</p>
+
+<p class="fs">String Concatenation</p>
+
+<p id="fst">To concatenate, or combine, two strings you can use the + operator.<br>
+Example<br>
+
+Merge variable a with variable b into variable c:</p>
+<p class="first">a = "Hello"<br>
+b = "World"<br>
+c = a + b<br>
+print(c)</p>
+
+
+<p class="fs">String Format</p>
+
+<p id="fst">As we learned in the Python Variables chapter, 
+we cannot combine strings and numbers like this:<br>
+Example</p>
+<p class="first">age = 36<br>
+txt = "My name is John, I am " + age<br>
+print(txt)</p>
+<br><hr>
+<a href="chapter8.html"><button class="bt">next</button></a>
+<a href="chapter6.html"><button class="bn">previous</button></a>
+</body>
+</html>

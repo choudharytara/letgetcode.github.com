@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+ h1{text-align:center;color:red;font-size:70px}
+body{background:black;}
+.fs{font-size:25px;color:white}
+#fst{font-size:20px;color:green}
+.first{border:2px blue;border-style:dashed;background-color:white;
+color:black;width=20%;text-size:30px}
+.bt{background-color:red;float:left ;border-width:7px;font-size:20}
+</style>
+</head>
+<body>
+<h1> Arrays</h1>
+<p class="fs">Arrays</p>
+
+<p id="fst">Arrays are used to store multiple values in one single variable:<br>
+Example<br>
+
+Create an array containing car names:</p>
+<p class="first">cars = ["Ford", "Volvo", "BMW"]</p>
+<p class="fs">What is an Array?</p>
+
+<p id="fst">An array is a special variable, which can hold more than one value
+ at a time.<br>
+
+If you have a list of items (a list of car names, for example),
+ storing the cars in single variables could look like this:<br>
+<p class="first">car1 = "Ford"<br>
+car2 = "Volvo"<br>
+car3 = "BMW"</p>
+
+<p id="fst">However, what if you want to loop through the
+ cars and find a specific one? And what if you had not 3 cars, but 300?<br>
+
+The solution is an array!<br>
+
+An array can hold many values under a single name,
+ and you can access the values by referring to an index number.<br>
+<p class="fs">Access the Elements of an Array</p>
+
+<p id="fst">You refer to an array element by referring to the index number.<br>
+Example<br>
+
+Get the value of the first array item:</p>
+<p class="first">x = cars[0]</p>
+
+<p class="fs">The Length of an Array</p>
+
+<p id="fst">Use the len() method to return the length of an array
+ (the number of elements in an array).<br>
+Example<br>
+
+Return the number of elements in the cars array:</p>
+<p class="first">x = len(cars)<br>
+<p class="fs">Looping Array Elements</p>
+
+<p id="fst">You can use the for in loop to loop through all the elements of an array.<br>
+Example<br>
+
+Print each item in the cars array:</p>
+<p class="first">for x in cars:<br>
+  print(x)</p>
+<p class="fs">Adding Array Elements</p>
+
+<p id="fst">You can use the append() method to add an element to an array.<br>
+Example<br>
+
+Add one more element to the cars array:</p>
+<p class="first">cars.append("Honda")</p>
+<p class="fs">Removing Array Elements</p>
+
+<p id="fst">You can use the pop() method to remove an element from the array.<br>
+Example<br>
+
+Delete the second element of the cars array:</p>
+<p class="first">cars.pop(1)</p>
+
+<p id="fst">You can also use the remove() method to
+ remove an element from the array.<br>
+Example<br>
+
+Delete the element that has the value "Volvo":</p>
+<p class="first">cars.remove("Volvo")</p><br><hr>
+<a href="chapter12.html"><button class="bt">previous</button></a>
+</body>
+</html>

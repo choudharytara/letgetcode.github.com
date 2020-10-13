@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+ h1{text-align:center;color:red;font-size:70px}
+body{background:black;}
+.fs{font-size:25px;color:white}
+#fst{font-size:20px;color:green}
+.first{border:2px blue;border-style:solid;background-color:white;
+color:black;width=20%;text-size:30px}
+.bt{background-color:red;float:right;border-width:7px;font-size:20}
+.bn{background-color:red;float:left ;border-width:7px;font-size:20}
+</style>
+</head>
+<body>
+<h1>Comments</h1>
+
+<p id="fst">Comments can be used to explain Python code.
+
+Comments can be used to make the code more readable.
+
+Comments can be used to prevent execution when testing code.
+Creating a Comment<br>
+
+Comments starts with a #, and Python will ignore them:<br>
+Example<br></p>
+<p class="first">#This is a comment<br>
+print("Hello, World!")<br></p>
+
+<p id="fst">Comments can be placed at the end of a line, and Python will ignore the rest of the line:<br>
+Example<br></p>
+<p class="first">print("Hello, World!")<br> #This is a comment<br></p>
+
+<p id="fst">Comments does not have to be text to explain the code, 
+it can also be used to prevent Python from executing code:<br>
+Example</p><br>
+<p class="first">#print("Hello, World!")<br>
+print("Cheers, Mate!")<br></p>
+<p class="fs">Multi Line Comments</p>
+
+<p id="fst">Python does not really have a syntax for multi line comments.<br>
+
+To add a multiline comment you could insert a # for each line:<br>
+Example</p><br>
+<p class="first">#This is a comment<br>
+#written in<br>
+#more than just one line<br>
+print("Hello, World!")</p><br>
+
+<p id="fst">Or, not quite as intended, you can use a multiline string.<br>
+
+Since Python will ignore string literals that are not assigned to a variable,
+ you can add a multiline string (triple quotes) in your code, 
+and place your comment inside it:<br>
+Example</p><br>
+<p class="first">"""<br>
+This is a comment<br>
+written in<br>
+more than just one line<br>
+"""<br>
+print("Hello, World!")</p>
+<br><hr>
+<a href="chapter4.html"><button class="bt">next</button></a>
+<a href="chapter2.html"><button class="bn">previous</button></a>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<html>
+<head>
+<style>
+ h1{text-align:center;color:red;font-size:70px}
+body{background:black;}
+.fs{font-size:25px;color:white}
+#fst{font-size:20px;color:green}
+.first{border:2px blue;border-style:dashed;background-color:white;
+color:black;width=20%;text-size:30px}
+.bt{background-color:red;float:right;border-width:7px;font-size:20}
+.bn{background-color:red;float:left ;border-width:7px;font-size:20}
+</style>
+</head>
+<body>
+<h1> Functions</h1>
+
+<p id="fst">A function is a block of code which only runs when it is called.<br>
+
+You can pass data, known as parameters, into a function.<br>
+
+A function can return data as a result.</p>
+<p class="fs">Creating a Function</p>
+
+<p id="fst">In Python a function is defined using the def keyword:<br>
+Example<br>
+<p class="first">def my_function():<br>
+  print("Hello from a function")<br>
+<p class="fs">Calling a Function</p>
+
+<p id="fst">To call a function, use the function name followed by parenthesis:<br>
+Example</p>
+<p class="first">def my_function():<br>
+  print("Hello from a function")<br>
+
+my_function()</p>
+<p class="fs">Arguments</p>
+
+<p id="fst">Information can be passed into functions as arguments.<br>
+
+Arguments are specified after the function name, inside the parentheses.<br> 
+You can add as many arguments as you want, just separate them with a comma.<br>
+
+The following example has a function with one argument (fname).<br>
+ When the function is called, we pass along a first name, which is
+ used inside the function to print the full name:<br>
+Example</p>
+<p class="first">def my_function(fname):<br>
+  print(fname + " Refsnes")<br>
+
+my_function("Emil")<br>
+my_function("Tobias")<br>
+my_function("Linus")</p>
+
+<p id="fst">Arguments are often shortened to args in Python documentations.</p>
+<p class="fs">Parameters or Arguments?</p>
+
+<p id="fst">The terms parameter and argument can be used for the same thing:<br>
+ information that are passed into a function.<br>
+
+From a function's perspective:<br>
+
+A parameter is the variable listed inside the parentheses in the function definition.<br>
+
+An argument is the value that are sent to the function when it is called.</p>
+<p class="fs">Number of Arguments</p>
+
+<p id="fst">By default, a function must be called with the correct number of 
+arguments.<br>Meaning that if your function expects 2 arguments, you have to call 
+the function with 2 arguments, not more, and not less.<br>
+Example<br>
+
+This function expects 2 arguments, and gets 2 arguments:</p>
+<p class="first">def my_function(fname, lname):<br>
+  print(fname + " " + lname)<br>
+
+my_function("Emil", "Refsnes")</p>
+<p id="fst">If you try to call the function with 1 or 3 arguments,
+ you will get an error:<br>
+Example<br>
+
+This function expects 2 arguments, but gets only 1:</p>
+<p class="first">def my_function(fname, lname):<br>
+  print(fname + " " + lname)<br>
+
+my_function("Emil")</p>
+<p class="fs">Default Parameter Value</p>
+
+<p id="fst">The following example shows how to use a default parameter value.<br>
+
+If we call the function without argument, it uses the default value:<br>
+Example</p>
+<p class="first">def my_function(country = "Norway"):<br>
+  print("I am from " + country)<br>
+
+my_function("Sweden")<br>
+my_function("India")<br>
+my_function()<br>
+my_function("Brazil")</p>
+<p class="fs">Return Values</p>
+
+<p id="fst">To let a function return a value, use the return statement:<br>
+Example</p>
+<p class="first">def my_function(x):<br>
+  return 5 * x<br>
+
+print(my_function(3))<br>
+print(my_function(5))<br>
+print(my_function(9))</p>
+<br><hr>
+<a href="chapter13.html"><button class="bt">next</button></a>
+<a href="chapter11.html"><button class="bn">previous</button></a>
+</body>
+</html>

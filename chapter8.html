@@ -1,0 +1,106 @@
+<html>
+<head>
+<style>
+ h1{text-align:center;color:red;font-size:70px}
+body{background:black;}
+.fs{font-size:25px;color:white}
+#fst{font-size:20px;color:green}
+.first{border:2px blue;border-style:dashed;background-color:white;
+color:black;width=20%;text-size:30px}
+.bt{background-color:red;float:right;border-width:7px;font-size:20}
+.bn{background-color:red;float:left ;border-width:7px;font-size:20}
+</style>
+</head>
+<body>
+<h1> Booleans</h1>
+
+<p id="fst">Booleans represent one of two values: True or False.</p>
+<p class="fs">Boolean Values</p>
+
+<p id="fst">In programming you 
+often need to know if an expression is True or False.<br>
+You can evaluate any expression in Python, and get one of
+ two answers, True or False.<br>
+
+When you compare two values, the expression is evaluated and
+ Python returns the Boolean answer:<br>
+Example</p>
+<p class="first">print(10 > 9)<br>
+print(10 == 9)<br>
+print(10 < 9)</p>
+
+<p id="fst">When you run a condition in an if statement,
+ Python returns True or False:<br>
+Example<br>
+
+Print a message based on whether the condition is True or False:<br>
+<p class="first">a = 200<br>
+b = 33<br>
+
+if b > a:<br>
+  print("b is greater than a")<br>
+else:<br>
+  print("b is not greater than a")</p>
+<p class="fs">Evaluate Values and Variables</p>
+<p id="fst">The bool() function allows you to evaluate any value,
+ and give you True or False in return,<br>
+Example<br>
+
+Evaluate a string and a number:</p>
+<p class="first">print(bool("Hello"))<br>
+print(bool(15))</p>
+<p id="fst">Example<br>
+
+Evaluate two variables:</p>
+<p class="first">x = "Hello"<br>
+y = 15<br>
+
+print(bool(x))<br>
+print(bool(y))</p>
+<p class="fs">Most Values are True</p>
+
+<p id="fst">Almost any value is evaluated to True if it has some sort of content.<br>
+
+Any string is True, except empty strings.<br>
+
+Any number is True, except 0.<br>
+
+Any list, tuple, set, and dictionary are True, except empty ones.<br>
+Example<br>
+
+The following will return True:</p>
+<p class="first">bool("abc")<br>
+bool(123)<br>
+bool(["apple", "cherry", "banana"])</p>
+<p class="fs">Some Values are False</p>
+
+<p id="fst">In fact, there are not many values that evaluates to False,<br>
+ except empty values, such as (), [], {}, "", <br>
+the number 0, and the value None.<br>
+ And of course the value False evaluates to False.<br>
+Example<br>
+
+The following will return False:</p>
+<p class="first">bool(False)<br>
+bool(None)<br>
+bool(0)<br>
+bool("")<br>
+bool(())<br>
+bool([])<br>
+bool({})</p>
+
+<p id="fst">One more value, or object in this case, evaluates to False,<br>
+ and that is if you have an object that is made from a class with a __len__ function <br>
+that returns 0 or False:<br>
+Example</p>
+<p class="first">class myclass():<br>
+  def __len__(self):<br>
+    return 0<br>
+
+myobj = myclass()<br>
+print(bool(myobj))</p>
+<br><hr>
+<a href="chapter9.html"><button class="bt">next</button></a>
+<a href="chapter7.html"><button class="bn">previous</button></a>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+ h1{text-align:center;color:red;font-size:70px}
+body{background:black;}
+.fs{font-size:25px;color:white}
+#fst{font-size:20px;color:green}
+.first{border:2px blue;border-style:dashed;background-color:white;
+color:black;width=20%;text-size:30px}
+.bt{background-color:red;float:right;border-width:7px;font-size:20}
+.bn{background-color:red;float:left ;border-widtth:7px;font-size:20}
+</style>
+</head>
+<body>
+<h1> While Loops</h1>
+<p class="fs">Python Loops</p>
+
+<p id="fst">Python has two primitive loop commands:<br>
+
+  1)  while loops<br>
+  2)  for loops<br>
+
+The while Loop<br>
+
+With the while loop we can execute a set of statements as long as a condition is true.<br>
+Example<br>
+
+Print i as long as i is less than 6:</p>
+<p class="first">i = 1<br>
+while i < 6:<br>
+  print(i)<br>
+  i += 1</p>
+
+<p id="fst">The while loop requires relevant variables to be ready, 
+in this example we need to define an indexing variable, i, which we set to 1.</p>
+<p class="fs">The break Statement</p>
+
+<p id="fst">With the break statement we can stop the loop even if the while condition is true:<br>
+Example<br>
+
+Exit the loop when i is 3:</p>
+<p class="first">i = 1<br>
+while i < 6:<br>
+  print(i)<br>
+  if i == 3:<br>
+    break<br>
+  i += 1</p>
+<p class="fs">The continue Statement</p>
+
+<p id="fst">With the continue statement we can stop the current iteration,
+ and continue with the next:<br>
+Example<br>
+Continue to the next iteration if i is 3:<br>
+<p class="first">i = 0<br>
+while i < 6:<br>
+  i += 1<br>
+  if i == 3:<br>
+    continue<br>
+  print(i)</p>
+<p class="fs">The else Statement</p>
+
+<p id="fst">With the else statement we can run a block of code once when 
+the condition no longer is true:<br>
+Example<br>
+
+Print a message once the condition is false:<br>
+<p class="first">i = 1<br>
+while i < 6:<br>
+  print(i)<br>
+  i += 1<br>
+else:<br>
+  print("i is no longer less than 6")</p>
+<br><hr>
+<a href="chapter11.html"><button class="bt">next</button></a>
+<a href="chapter9.html"><button class="bn">previous</button></a></body>
+</html>

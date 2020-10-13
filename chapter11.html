@@ -1,0 +1,93 @@
+<html>
+<head>
+<style>
+ h1{text-align:center;color:red;font-size:70px}
+body{background:black;}
+.fs{font-size:25px;color:white}
+#fst{font-size:20px;color:green}
+.first{border:2px blue;border-style:dashed;background-color:white;
+color:black;width=20%;text-size:30px}
+.bt{background-color:red;float:right;border-width:7px;font-size:20}
+.bn{background-color:red;float:left ;border-width:7px;font-size:20}
+</style>
+</head>
+<body>
+<h1> For Loops</h1>
+<p class="fs">Python For Loops</p>
+
+<p id="fst">A for loop is used for iterating over a sequence 
+(that is either a list, a tuple, a dictionary, a set, or a string).<br>
+
+This is less like the for keyword in other programming languages,
+ and works more like an iterator method as found in other
+ object-orientated programming languages.<br>
+
+With the for loop we can execute a set of statements,
+ once for each item in a list, tuple, set etc.<br>
+Example<br>
+
+Print each fruit in a fruit list:</p>
+<p class="first">fruits = ["apple", "banana", "cherry"]<br>
+for x in fruits:<br>
+  print(x)</p>
+
+<p id="fst">The for loop does not require an indexing variable to set beforehand.<br>
+<p class="fs">Looping Through a String</p>
+
+<p id="fst">Even strings are iterable objects, they contain a sequence of characters:<br>
+Example<br>
+
+Loop through the letters in the word "banana":</p>
+<p class="first">for x in "banana":<br>
+  print(x)</p>
+<p class="fs">The break Statement</p>
+
+<p id="fst">With the break statement we can stop the loop before it has
+ looped through all the items:<br>
+Example<br>
+
+Exit the loop when x is "banana":<br>
+<p class="first">fruits = ["apple", "banana", "cherry"]<br>
+for x in fruits:<br>
+  print(x)<br>
+  if x == "banana":<br>
+    break</p>
+<p id="fst">Example<br>
+
+Exit the loop when x is "banana", but this time the break comes before the print:</p>
+<p class="first">fruits = ["apple", "banana", "cherry"]<br>
+for x in fruits:<br>
+  if x == "banana":<br>
+    break<br>
+  print(x)</p>
+<p class="fs">The continue Statement</p>
+
+<p id="fst">With the continue statement we can stop the current iteration of the loop,
+ and continue with the next:<br>
+Example<br>
+
+Do not print banana:</p>
+<p class="first">fruits = ["apple", "banana", "cherry"]<br>
+for x in fruits:<br>
+  if x == "banana":<br>
+    continue<br>
+  print(x)<br>
+<p class="fs">Nested Loops</p>
+
+<p id="fst">A nested loop is a loop inside a loop.<br>
+
+The "inner loop" will be executed one time for each iteration of the "outer loop":<br>
+Example<br>
+
+Print each adjective for every fruit:</p>
+<p class="first">adj = ["red", "big", "tasty"]<br>
+fruits = ["apple", "banana", "cherry"]<br>
+
+for x in adj:<br>
+  for y in fruits:<br>
+    print(x, y)</p>
+<br><hr>
+<a href="chapter12.html"><button class="bt">next</button></a>
+<a href="chapter10.html"><button class="bn">previous</button></a>
+</body>
+</html>

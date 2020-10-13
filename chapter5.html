@@ -1,0 +1,131 @@
+<html>
+<head>
+<style>
+ h1{text-align:center;color:red;font-size:70px}
+body{background:black;}
+.fs{font-size:25px;color:white}
+#fst{font-size:20px;color:green}
+.first{border:2px blue;border-style:dashed;background-color:white;
+color:black;width=20%;text-size:30px}
+table{border:2px dotted yellow ;text-align:center}
+th{background-color:lightblue;color:red}
+td{background-color:white;color:black;border:2px solid blue}
+.first{border:2px blue;border-style:dashed;background-color:white;
+color:black;width=20%;text-size:30px}
+.bt{background-color:red;float:right;border-width:7px;font-size:20}
+.bn{background-color:red;float:left ;border-width:7px;font-size:20}
+</style>
+</head>
+<body>
+ <h1>Data Types</h1>
+<p class="fs">Built-in Data Types :</p>
+
+<p id="fst">In programming, data type is an important concept.<br>
+Variables can store data of different types, and different types can do different things.<br>
+Python has the following data types built-in by default, in these categories:</p>
+<b><table align=center>
+<tr>
+<td>Text Type</td><td>str</td>
+</tr>
+<tr>
+<td>Numeric Types</td> 	<td>int, float, complex</td>
+</tr>
+<tr>
+<td>Sequence Types</td> 	<td>list, tuple, range</td>
+</tr>
+<tr>
+<td>Mapping Type</td> 	<td>dict</td>
+</tr>
+<tr>
+<td>Set Types</td> 	<td>set, frozenset</td>
+</tr>
+<tr>
+<td>Boolean Type</td> 	<td>bool</td>
+</tr>
+<tr>
+<td>Binary Types</td> 	<td>bytes, bytearray, memoryview</td>
+</tr>
+</table></b>
+<p class="fs">Getting the Data Type :</p>
+
+<p id="fst">You can get the data type of any object by using the type() function:<br>
+Example<br></p>
+<p class="first">
+Print the data type of the variable x:
+x = 5
+print(type(x))</p>
+<p class="fs">Setting the Data Type :</p>
+
+<p id="fst">In Python, the data type is set when you assign a value to a variable :</p>
+<b><table align=center>
+<tr>
+<th>Example</th> 	<th>Data Type</th> 
+</tr>
+<tr>
+<td>x = "Hello World" </td>	<td>str</td> 	
+</tr>
+<tr>
+<td>x = 20 </td>	<td>int</td> 	
+</tr>
+<tr>
+<td>x = 20.5 </td>	<td>float</td> 	
+</tr>
+<tr>
+<td>x = 1j </td>	<td>complex</td> 	
+</tr>
+<tr>
+<td>x = ["apple", "banana", "cherry"]</td> 	<td>list</td> 	
+</tr>
+<tr>
+<td>x = ("apple", "banana", "cherry") </td><td>tuple </td>	
+</tr>
+<tr>
+<td>x = range(6) </td>	<td>range</td> 	
+</tr>
+<tr>
+<td>x = {"name" : "John", "age" : 36}</td> <td>dict</td> 	
+</tr>
+<tr>
+<td>x = {"apple", "banana", "cherry"} </td>	<td>set</td> 	
+</tr>
+<tr>
+<td>x = frozenset({"apple", "banana", "cherry"}) </td><td>frozenset</td> 	
+</tr>
+<tr>
+<td>x = True </td>	<td>bool</td> 	
+</tr>
+<tr>
+<td>x = b"Hello" </td><td>bytes</td> 	
+</tr>
+<tr>
+<td>x = bytearray(5) </td>	<td>bytearray</td> 	
+</tr>
+<tr>
+<td>x = memoryview(bytes(5))</td> 	<td>memoryview</td> 	
+</tr>
+</table></b> 
+<p class="fs">Setting the Specific Data Type :</p>
+
+<p id="fst">If you want to specify the data type, you can use the following constructor functions :</p>
+<table align=center>
+<tr><th>Example</th> 	<th>Data Type</th> </tr>
+<tr><td>x = str("Hello World")</td> 	<td>str</td> </tr>	
+<tr><td>x = int(20)</td> 	<td>int </td>	</tr>
+<tr><td>x = float(20.5)</td> 	<td>float</td> 	</tr>
+<tr><td>x = complex(1j)</td> 	<td>complex</td> 	</tr>
+<tr><td>x = list(("apple", "banana", "cherry"))</td> 	<td>list</td> 	</tr>
+<tr><td>x = tuple(("apple", "banana", "cherry"))</td> 	<td>tuple</td> </tr>	
+<tr><td>x = range(6)</td> 	<td>range</td> 	</tr>
+<tr><td>x = dict(name="John", age=36)</td> 	<td>dict</td> 	</tr>
+<tr><td>x = set(("apple", "banana", "cherry"))</td> 	<td>set</td> 	</tr>
+<tr><td>x = frozenset(("apple", "banana", "cherry"))</td> 	<td>frozenset</td></tr> 	
+<tr><td>x = bool(5)</td> 	<td>bool </td>	</tr>
+<tr><td>x = bytes(5)</td> 	<td>bytes </td>	</tr>
+<tr><td>x = bytearray(5)</td> 	<td>bytearray</td> </tr>	
+<tr><td>x = memoryview(bytes(5)) 	<td>memoryview</td> </tr>	
+</table>
+<br><hr>
+<a href="chapter6.html"><button class="bt">next</button></a>
+<a href="chapter4.html"><button class="bn">previous</button></a>
+</body>
+</html>
